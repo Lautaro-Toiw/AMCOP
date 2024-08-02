@@ -593,6 +593,7 @@ input {
     bottom: 20px;
     right: 48px;
     border-radius: 19px;
+    z-index: 1000; 
 }
 
 
