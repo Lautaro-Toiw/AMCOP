@@ -755,3 +755,28 @@ input {
         height: 500px;
     }
 }
+
+/*logo de wpp*/
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+  
+#whatsapp-button img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+#whatsapp-button a {
+    display: block;
+
+}
+  
+  
+#whatsapp-button img:hover {
+    transform: scale(1.1);
+}
