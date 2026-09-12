@@ -35,10 +35,8 @@ h1,h2,h3 { line-height:1.08; font-weight:700; }
 .mobile-menu nav a { display:block; padding:12px 14px; color:#323942; font-weight:600; border-radius:14px; transition:background .18s ease,color .18s ease; }
 .mobile-menu nav a + a { margin-top:2px; }
 .mobile-menu nav a:hover,.mobile-menu nav a:focus-visible,.mobile-menu nav a.is-active { color:var(--blue); background:rgba(20,115,230,.1); }
-.hero { min-height:624px; position:relative; display:grid; align-items:center; overflow:hidden; color:var(--white); }
-.hero-video,.hero-shade { position:absolute; inset:0; width:100%; height:100%; }
-.hero-video { object-fit:cover; }
-.hero-shade { background:rgba(0,12,33,.72); }
+.hero { min-height:624px; position:relative; display:grid; align-items:center; overflow:hidden; color:var(--white); background:radial-gradient(120% 120% at 25% 15%,#144d9e 0%,#082e6e 45%,#050f28 100%); }
+.hero-shade { position:absolute; inset:0; width:100%; height:100%; background:rgba(0,12,33,.72); }
 .hero-content { position:relative; padding:88px 0; }
 .eyebrow { color:var(--blue); font-size:12px; font-weight:700; text-transform:uppercase; }
 .eyebrow.light { color:#9ac6ff; }
