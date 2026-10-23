@@ -51,8 +51,10 @@ $cuerpoMensaje .= "Email: $email\n";
 $cuerpoMensaje .= "Mensaje:\n$mensaje\n";
 
 // Sale desde la casilla del local (un correo "desde" la direccion del cliente puede terminar en
-// spam o ser rechazado); al tocar "Responder" se le contesta al cliente
-$cabeceras = "From: Web AMCOP <$destinatario>\r\n";
+// spam o ser rechazado), pero con el nombre del cliente: en la bandeja se ve quien escribio. Al
+// tocar "Responder" se le contesta al cliente. El nombre va codificado (puede tener acentos)
+$remitente = "=?UTF-8?B?" . base64_encode($nombre) . "?=";
+$cabeceras = "From: $remitente <$destinatario>\r\n";
 $cabeceras .= "Reply-To: $email\r\n";
 $cabeceras .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
